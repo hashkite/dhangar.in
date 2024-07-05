@@ -1,0 +1,522 @@
+// main: main.scss
+//
+@media only screen and (max-width :1200px) {}
+// END MEDIA SCREEN WIDTH 1024px
+//
+@media only screen and (max-width :960px) {
+	#peoples {
+		margin: 0;
+
+		.people {
+			width: 50%;
+			padding: 24px 16px;
+
+			.image {
+				width: 160px;
+				height: 160px;
+			}
+		}
+	}
+
+	#publication_hightlight {
+		.publication_hightlighted_item {
+			width: 100%;
+			margin: 0 0 16px;
+
+			&:last-child {
+				margin: 0;
+			}
+		}
+	}
+
+	#publications {
+		width: 100%;
+		display: flex;
+		flex-wrap: wrap;
+
+		.publication_item {
+			width: 100%;
+			margin: 0 0 24px;
+		}
+	}
+
+	body#startpage,
+	body#startsida {
+		#latestUpdates,
+		#quicklinks {
+			.quicklink_item,
+			.update_item {
+				width: calc(50% - 32px);
+				margin: 0 16px 24px;
+
+				&:last-child {
+					margin-bottom: 0;
+				}
+			}
+		}
+
+		section {
+			padding: 32px 0;
+		}
+	}
+
+	#startsida .section.gray .col_45 {
+		padding: 5% 5% 14%;
+		position: relative;
+	}
+
+	#startsida .section.gray .col_55 {
+		padding: 5% 5% 14%;
+	}
+
+	#startsida .section.gray.last .col_45 {
+		padding-bottom: 8.5%;
+		padding-top: 14%;
+	}
+
+	#startsida .section.gray h2 {
+		margin-top: 20px;
+	}
+
+	#startsida .image_left {
+		width: 200%;
+	}
+
+	#banner {
+		padding-bottom: 40%;
+
+		#banner-text {
+			font-size: 30px;
+			margin-top: 12%;
+		}
+	}
+
+	.menu_button {
+		display: block;
+		width: 31px;
+		-webkit-transform: translate3d(0, 0, 0);
+		-moz-transform: translate3d(0, 0, 0);
+		-ms-transform: translate3d(0, 0, 0);
+		-o-transform: translate3d(0, 0, 0);
+		transform: translate3d(0, 0, 0);
+	}
+
+	#top {
+		height: 60px;
+		position: fixed;
+		top: 0;
+		z-index: 55;
+		box-shadow: 0 1px 2px rgba(0,0,0, 0.4);
+
+		.wrapper {
+			width: 90%;
+			padding: 0 5%;
+		}
+	}
+
+	.logo {
+		padding: 15px 0;
+	}
+
+	#nav {
+		width: 100%;
+
+		li {
+			width: 80%;
+			float: left;
+			margin: 0 10% 5px;
+
+			a {
+				color: #313131;
+				border-top: 1px solid #FFF;
+				border-bottom: 1px solid #FFF;
+				width: auto;
+				text-align: left;
+				line-height: 31px;
+				height: 30px;
+				display: inline-block;
+				margin: 0;
+				padding: 0;
+
+				&:after {
+					content: none;
+				}
+
+				&:before {
+					content: none;
+				}
+
+				&.active {
+					color: $color_red;
+					background: none;
+					border-color: #A6002A;
+				}
+			}
+		}
+	}
+
+	#navigation {
+		width: 100%;
+		padding: 60px 0;
+	}
+
+	#nav_wrapper {
+		height: 100vh;
+		padding: 0;
+		background: #FFF;
+		overflow: hidden;
+		-moz-transition: -moz-transform 0.33s cubic-bezier(0.33, 0, 0.2, 1);
+		-o-transition: -o-transform 0.33s cubic-bezier(0.33, 0, 0.2, 1);
+		-ms-transition: -ms-transform 0.33s cubic-bezier(0.33, 0, 0.2, 1);
+		transition: transform 0.33s cubic-bezier(0.33, 0, 0.2, 1);
+		position: absolute;
+		width: 70%;
+		right: 0;
+		overflow-y: scroll;
+		-webkit-overflow-scrolling: touch;
+		-moz-transform: translate3d(100%, 0px, 0px);
+		-webkit-transform: translate3d(100%, 0px, 0px);
+		transform: translate3d(100%, 0px, 0px);
+		z-index: 56;
+		max-width: 400px;
+	}
+
+	body.menu_open #nav_wrapper {
+		-moz-transform: translate3d(0%, 0px, 0px);
+		-webkit-transform: translate3d(0%, 0px, 0px);
+		transform: translate3d(0%, 0px, 0px);
+	}
+
+	.project {
+		width: 95%;
+		padding-left: 5%;
+	}
+
+	.project:nth-child(even) {
+		padding-left: 0;
+		padding-right: 5%;
+	}
+}
+// END MEDIA SCREEN WIDTH 900px
+// iPad, iPad 2, iPad Mini // :: Horizontal ::
+@media only screen and (max-width :768px) {
+	#peoples {
+		margin: 0;
+
+		.people {
+			width: 100%;
+			padding: 24px 16px;
+
+			.image {
+				width: 160px;
+				height: 160px;
+			}
+		}
+	}
+
+	body#startpage,
+	body#startsida {
+		#latestUpdates,
+		#quicklinks {
+			.quicklink_item,
+			.update_item {
+				width: 100%;
+				margin: 0 0 24px;
+			}
+		}
+	}
+
+	.section {
+		padding: 30px 0;
+	}
+
+	#footer .divider {
+		margin: 30px auto;
+	}
+
+	#footer table.address td {
+		display: block;
+		border: 0;
+	}
+
+	#banner .banner_headline {
+		font-size: 26px;
+		line-height: 36px;
+		margin-bottom: 5px;
+	}
+
+	#banner .button_wrapper {
+		margin-top: 10px;
+	}
+
+	body {
+		font-size: 14px;
+		line-height: 24px;
+	}
+
+	.button,
+	.cms_a_-button,
+	.cms_a_-button_white {
+		padding: 10px 15px;
+		font-size: 13px;
+	}
+
+	.content {
+		padding: 0 5%;
+	}
+
+	h1 {
+		margin: 0 0 20px;
+		font-size: 24px;
+		line-height: 30px;
+	}
+
+	h2 {
+		margin: 0 0 20px;
+		font-size: 20px;
+		line-height: 26px;
+	}
+
+	.wrapper {
+		max-width: 100%;
+	}
+
+	#footer {
+		padding: 20px 5%;
+		width: 90%;
+	}
+
+	.col,
+	.col_45,
+	.col_55 {
+		margin: 0;
+	}
+
+	.col_4,
+	.col_5,
+	.col_6,
+	.col_7,
+	.col_8 {
+		width: 100%;
+	}
+
+	.col_45,
+	.col_55 {
+		width: 100%;
+	}
+
+	#startsida {
+		.image_right {
+			position: static;
+			width: 100%;
+			margin-top: 5%;
+		}
+
+		.image_left {
+			position: static;
+			width: 100%;
+			border: none;
+		}
+
+		.section.gray {
+			margin-bottom: 2%;
+			padding: 5%;
+			width: 90%;
+
+			&.top {
+				.col_45 {
+					padding-bottom: 0;
+					float: right;
+				}
+
+				.col_55 {
+					float: right;
+				}
+			}
+
+			&.last {
+				.col_45 {
+					padding-bottom: 0;
+					padding-top: 0;
+				}
+			}
+
+			.col_45 {
+				padding: 0;
+				position: relative;
+
+				&:first-child {
+					padding-left: 0;
+				}
+
+				&:last-child {
+					padding-right: 0;
+				}
+			}
+
+			.col_55 {
+				padding: 0;
+				position: relative;
+
+				&:first-child {
+					padding-left: 0;
+				}
+
+				&:last-child {
+					padding-right: 0;
+				}
+			}
+		}
+
+		.site {
+			.wrapper {
+				width: 100%;
+			}
+		}
+	}
+
+	#banner {
+		margin-top: 60px;
+		background-size: 160%;
+		position: relative;
+		background-position: center;
+		padding-bottom: 50%;
+
+		.banner_text {
+			width: 100%;
+		}
+	}
+
+	body#startsida #banner .banner_text_wrapper {
+		width: 90%;
+		padding: 5% 5% 0;
+	}
+
+	#banner .banner_text_wrapper {
+		width: 90%;
+		padding: 22% 5% 0;
+	}
+
+	#footer .end {
+		position: static;
+		padding: 40px 0;
+	}
+}
+// END MEDIA SCREEN WIDTH 768px
+// iPhone 6 // :: Landscape ::
+@media only screen and (max-width :667px) {}
+// END MEDIA SCREEN WIDTH 667px
+// iPhone 5 // :: Landscape ::
+@media only screen and (max-width :568px) {
+	.project .inner_wrapper {
+		position: relative;
+	}
+
+	.project h3 {
+		margin: 0 0 50px;
+	}
+
+	.project .image {
+		height: 33vw;
+		/*    border-left: 5px solid #fff;
+    border-bottom: 5px solid #fff;*/
+		position: relative;
+		right: 0;
+		top: 0;
+		float: right;
+		display: block;
+	}
+
+	.project .text {
+		margin: 20px 0;
+	}
+
+	.project:nth-child(even) .image {
+		float: left;
+		border-left: 0;
+		/*  border-right: 5px solid #fff;
+    border-bottom: 5px solid #fff;*/
+	}
+
+	.project .image img {
+		width: 100%;
+		height: auto;
+		display: block;
+		float: right;
+	}
+
+	img {
+		width: 100%;
+	}
+
+	.overlay {
+		background: rgba(0, 0, 0, 0.3);
+		display: block;
+	}
+}
+// END MEDIA SCREEN WIDTH 568px
+//
+@media only screen and (max-width :414px) {
+	// iPhone 6+ // :: Horizontal ::
+	.project .image {
+		height: 20vw;
+		width: 20%;
+		position: absolute;
+		height: auto;
+		width: 100%;
+		position: relative;
+		margin-bottom: 24px;
+	}
+
+	.project:nth-child(even) .image {
+		left: inherit;
+		right: 0;
+	}
+
+	.project .text {
+		width: 100%;
+	}
+
+	.project {
+		width: 100% !important;
+		padding: 0 !important;
+	}
+
+	.project .inner_wrapper {
+		width: 90%;
+		padding: 0 5%;
+	}
+
+	.project:nth-child(even) .image {
+		border-right: 0;
+		border-left: 5px solid #fff;
+	}
+
+	#banner .banner_text_wrapper {
+		width: 90%;
+		padding: 16% 5% 0;
+	}
+
+	#banner .banner_headline {
+		font-size: 20px;
+	}
+
+	body#startsida #banner .banner_headline {
+		font-size: 20px;
+	}
+
+	body#startsida #banner {
+		padding-bottom: 60%;
+	}
+}
+// END MEDIA SCREEN WIDTH 414px
+//
+@media only screen and (max-width :375px) {
+	// iPhone 6 // :: Horizontal ::
+}
+// END MEDIA SCREEN WIDTH 375px
+//
+@media only screen and (max-width :320px) {
+	// iPhone 5, iPhone 4, iPhone 4s // :: Horizontal ::
+}
+// END MEDIA SCREEN WIDTH 320px
