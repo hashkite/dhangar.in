@@ -1,0 +1,68 @@
+.paragraph--type--view {
+  .views-view-responsive-grid {
+    --views-responsive-grid--column-count: 1 !important;
+    @include breakpoint(md) { 
+        --views-responsive-grid--column-count: 2 !important;
+        --views-responsive-grid--layout-gap: 20px !important;
+    }
+    @include breakpoint(lg) { 
+        --views-responsive-grid--column-count: 3 !important;
+    }
+    @include breakpoint(xl) { 
+        --views-responsive-grid--column-count: 4 !important;
+        --views-responsive-grid--layout-gap: 25px !important;
+    }
+    &__item {
+        border-radius: 20px;
+        border: 1px solid $gray;
+        background-color: $color_white;
+        position: relative;
+        padding-bottom: 3.5rem;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    }
+    .card-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border: none;
+        padding: 1.5rem;
+      .user {
+        &-image {
+          width: 200px;
+          height: 200px;
+          border-radius: 50%;
+          overflow: hidden;
+
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;        
+          }
+        }
+        &-content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        &-link {
+            position: absolute;
+            bottom: 30px;
+
+          a {
+            padding: 0.5rem 1.5rem;
+            border-radius: 20px;
+            text-decoration: none;
+            border: 1px solid $gray;
+            color: $color_black;
+
+            &:hover {
+                background-color: $gray;
+            }
+          }
+        }
+      }
+    }
+  }
+}
