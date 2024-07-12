@@ -1,0 +1,24 @@
+<?php
+
+/**
+ * @file
+ * This module holds functions of MSG91 SMS Module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function msg91_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    case 'help.page.msg91':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('MSG91 SMS integration module provides easy integration of msg91 to be used in India. Now also provides a function which can be used by developers to send SMS.') . '</p>';
+      $output .= '<h3>' . t('Uses') . '</h3>';
+      $output .= '<p>' . t('Send SMS through blocks or call the custom function to send SMS from any other module.') . '</p>';
+
+      return $output;
+  }
+}

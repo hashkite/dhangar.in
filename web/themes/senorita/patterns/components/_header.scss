@@ -1,0 +1,42 @@
+header[role="banner"] {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 119px;
+}
+
+/* Navigation styles */
+header[role="banner"] nav[role="navigation"] {
+    ul {
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+        gap: 20px;
+        padding-right: 35px;
+
+        li a {
+            color: $color_black;
+            text-decoration: none;
+        }
+    }
+}
+
+/* Branding logo */
+#block-senorita-site-branding img {
+    width: 290px;
+    height: auto;
+    margin-left: 25px;
+    margin-top: 6px;
+}
+.title-text{
+    font-size: 39px;
+    text-align: center;
+    font-weight: 600;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.desc-text{
+    text-align: center;
+    font-size: 1.5em;
+    margin-bottom: 70px;
+}
