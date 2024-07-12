@@ -23,12 +23,12 @@
         box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
         height: 28rem;
     }
-    // .card-wrapper {
-    //     display: flex;
-    //     flex-direction: column;
-    //     align-items: center;
-    //     border: none;
-    //     padding: 1.5rem;
+    .card-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border: none;
+        padding: 1.5rem;
       .user {
         &-image {
           width: 200px;
