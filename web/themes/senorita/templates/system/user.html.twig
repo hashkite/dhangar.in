@@ -21,51 +21,17 @@
 <article{{ attributes }}>
   {% if content is not empty %}
    {% if content.field_first_name.0 %}
-    <div class="container user-profile my-3 shadow p-3 mb-5 bg-body rounded">
-      <div class="row user-profile">
-        <div class="user-picture col-md-3">{{ content.user_picture }}</div>
-        <div class="col-md-9 row user-profile-content">
+    <div class="container user-profile mb-5 bg-body rounded align-items-end">
+      
+      <div class="row user-profile rounded">
+        <div class="user-picture col-md-3 ">{{ content.user_picture }}</div>
+        <div class="row user-profile-content">
           <h2 class="user-name">{{ content.field_first_name.0 }} {{ content.field_last_name.0 }}</h2>
-          <div class="col-md-10 gender">
-            <span>Gender: {{ content.field_gender.0 }}</span>
-          </div>
-          <div class="col-md-10 dob">
-            <span>DOB: {{ content.field_date_of_birth.0 }}</span>
-          </div>
-          <div class="col-md-10 marital-status">
-            <span>Marital Status: {{ content.field_marital_status.0 }}</span>
-          </div>
-          <div class="col-md-10 city">
-            <span>City: {{ content.field_city.0 }}</span>
-          </div>
-          <div class="col-md-10 education">
-            <span>Education: {{ content.field_education.0 }}</span>
-          </div>
-          <div class="col-md-10 occupation">
-            <span>Occupation: {{ content.field_occupation.0 }}</span>
-          </div>
+          
         </div>
       </div>
     </div>
 
-    <div class="container user-about my-3 shadow p-3 mb-3 bg-body rounded">
-      {% if content.field_about.0 %}
-      <div class="row user-about">
-        <div class="col-md-13 about">
-          <h4>A few words about me:</h4> 
-          {{ content.field_about.0 }}
-        </div>
-      </div>
-      {% endif %}
-    </div>
-    
-    <div class="container user-about my-3 shadow p-3 mb-3 bg-body rounded">
-      <div class="row user-about">
-        <div class="col-md-13 about">
-          <h4>Basic Details : </h4> 
-          {{ content.field_profile_for.0 }}
-        </div>
-      </div>
     </div>
     {% endif %}
   {% endif %}

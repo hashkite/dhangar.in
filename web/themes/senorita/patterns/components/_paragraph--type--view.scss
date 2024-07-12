@@ -1,5 +1,7 @@
 .paragraph--type--view {
   .views-view-responsive-grid {
+     margin-top: 25px;
+     margin-bottom: 25px;
     --views-responsive-grid--column-count: 1 !important;
     @include breakpoint(md) { 
         --views-responsive-grid--column-count: 2 !important;
@@ -19,6 +21,7 @@
         position: relative;
         padding-bottom: 3.5rem;
         box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        height: 28rem;
     }
     .card-wrapper {
         display: flex;
@@ -46,9 +49,20 @@
             align-items: center;
             text-align: center;
         }
+        &-name {
+          h2{
+          font-size: 25px;
+          font-weight: 500;
+          margin-top: 15px;
+          }
+        }
+        &-city {
+          padding-top: 14px;
+          margin-bottom:5px ;
+        }
         &-link {
             position: absolute;
-            bottom: 30px;
+            bottom: 35px;
 
           a {
             padding: 0.5rem 1.5rem;
