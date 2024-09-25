@@ -1,5 +1,0 @@
-msg91_authKey : Your Authentication Key
-msg91_senderID : SMSMSG91
-msg91_route : 4
-msg91_country_code: 91
-msg91_auth_url : https://control.msg91.com/api/validate.php?authkey=
