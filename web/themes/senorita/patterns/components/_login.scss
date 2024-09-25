@@ -1,39 +1,72 @@
 .user-login-form{
     background-color: #fff;
-    width: fit-content;
-    padding: 65px;
-    margin-left: 494px;
-    box-shadow: var(--bs-box-shadow) !important;
+    padding: 10px;
     border-radius: 7px;
-}
-.form-text{
-    font-size: 0.875em;
-    color: var(--bs-secondary-color);
-    height: 40px;
-    margin-top: 9px;
-    margin-bottom: 26px;
-    border-radius: 7px;
+    width: 100%;
+    text-align: center;
     box-shadow: var(--bs-box-shadow);
-    padding: 24px;
+    -webkit-box-shadow: var(--bs-box-shadow);
+    .form-text{
+        font-size: 0.875em;
+        color: var(--bs-secondary-color);
+        height: 40px;
+        margin-top: 9px;
+        margin-bottom: 26px;
+        border-radius: 7px;
+        -webkit-box-shadow: var(--bs-box-shadow);
+        padding: 27px;
+        border: none;
+        max-width: 500px;   
+    }
 }
+
 #edit-submit{
-    display: block;
+   
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
     align-items: center;
     background: #28a577;
     border: 0 solid #E2E8F0;
-    /* box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06); */
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
     color: #fff;
     font-family: Inter, sans-serif;
     font-size: 1rem;
     font-weight: 700;
-    height: 51px;
-    justify-content: center;
-    line-height: 24px;
-    overflow-wrap: break-word;
-    padding: 13px;
-    text-decoration: none;
-    width: 200px;
-    border-radius: 8px;
-    margin-left: 180px; 
+    height: 45px;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+     line-height: 24px;
+     overflow-wrap: break-word;
+     padding: 9px;
+     text-decoration: none;
+     border-radius: 8px;
+     min-width: 158px;
+     margin-top: 12px;
+}
+
+@media (max-width: 768px) {
+    .user-login-form {
+        padding: 8px;
+    }
+
+    .user-login-form .form-text {
+        font-size: 0.75em;
+        padding: 27px;
+        max-width: 500px;
+    }
+}
+
+@media (max-width: 516px) {
+    .user-login-form {
+        padding: 6px;
+    }
+
+    .user-login-form .form-text {
+        font-size: 0.75em;
+        padding: 16px;
+        max-width: 316px;
+    }
 }

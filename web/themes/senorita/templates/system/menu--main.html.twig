@@ -43,9 +43,12 @@
           {{ menus.menu_links(item.below, attributes, menu_level + 1) }}
         {% endif %}
       </li>
+      <li>
+       {% if user.id is not empty %}
+        <a href='/user/{{ user.id }}/edit-profile'>Edit profile</a>
+      {% endif %}
+      </li>
     {% endfor %}
     </ul>
-    <div class="hamburger-menu">
-  <div class="hamburger-icon"></div>
   {% endif %}
 {% endmacro %}

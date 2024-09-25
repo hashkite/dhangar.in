@@ -1,0 +1,57 @@
+<?php
+
+/**
+ * Implements hook_user_login().
+ */
+function gender_popup_user_login() {
+    // Get the current user object.
+    $current_user = \Drupal::currentUser();
+  
+    // Check if the user is authenticated (logged in).
+    if ($current_user->isAuthenticated()) {
+      // The user is logged in, proceed with checking gender.
+      $user = \Drupal\user\Entity\User::load($current_user->id());
+      $gender = $user->get('field_gender')->value; // Assuming 'field_gender' is your gender field.
+  
+      // If gender is not set, trigger the popup.
+      if (empty($gender)) {
+        \Drupal::messenger()->addMessage(t('Please select your gender.'));
+        \Drupal::service('page_cache_kill_switch')->trigger();
+      }
+    }
+    else {
+      // The user is not logged in (anonymous user), do nothing or redirect to login.
+      \Drupal::messenger()->addMessage(t('Please log in to continue.'));
+    }
+  }
+
+  function gender_popup_page_attachments_alter(array &$page) {
+    $current_user = \Drupal::currentUser();
+    if ($current_user->isAuthenticated()) {
+      $user = \Drupal\user\Entity\User::load($current_user->id());
+      $gender = $user->get('field_gender')->value;
+  
+      // If the user has no gender selected, attach the custom JavaScript for popup.
+      if (empty($gender)) {
+        // Attach custom JavaScript that will trigger the popup.
+        $page['#attached']['library'][] = 'gender_popup/gender_popup';
+      }
+
+      if ($user->get('field_gender')->value == 'male') {
+        // Add the "groom" role and remove the "bride" role.
+        $user->addRole('groom');
+        if ($user->hasRole('bride')) {
+            $user->removeRole('bride');
+        }
+      }
+      elseif ($user->get('field_gender')->value == 'female') {
+        // Add the "bride" role and remove the "groom" role.
+        $user->addRole('bride');
+        if ($user->hasRole('groom')) {
+            $user->removeRole('groom');
+        }
+      }
+      $user->save();
+    }
+  }
+  

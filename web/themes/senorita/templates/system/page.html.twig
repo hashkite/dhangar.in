@@ -2,12 +2,18 @@
      {{ page.branding }}
      {{ page.navigation }}
      {{ page.search }}
+     {# <div class="edit-profile">
+      {% if user.id is not empty %}
+        <a href='/user/{{ user.id }}/edit-profile'>Edit profile</a>
+      {% endif %}
+     </div> #}
 </header>
 <section class="featured" id="featured" role="complementary">
    {{ page.featured }}
 </section>
 <section class="main" id="main">
    <main aria-label="Site main content" class="content" id="content" role="main">
+
      {{ page.content }}
    </main>
    <aside class="right--sidebar" id="sidebar" role="complementary">

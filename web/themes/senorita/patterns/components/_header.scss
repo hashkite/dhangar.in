@@ -17,6 +17,7 @@ header[role="banner"] nav[role="navigation"] {
         li a {
             color: $color_black;
             text-decoration: none;
+            font-size: 16px;
         }
     }
 }
@@ -39,4 +40,22 @@ header[role="banner"] nav[role="navigation"] {
     text-align: center;
     font-size: 1.5em;
     margin-bottom: 70px;
+}   
+
+@media (max-width: 768px) {
+    #block-senorita-site-branding img  {
+        width: 290px;
+    }
+}
+
+@media (max-width: 516px) {
+    #block-senorita-site-branding img  {
+        width: 227px;
+    }
+
+    .title-text {
+        font-size: 31px;
+    }
+
+    
 }

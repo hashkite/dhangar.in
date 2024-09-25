@@ -1,0 +1,11 @@
+gender_popup:
+  css:
+    theme:
+      css/gender_popup.css: {}
+  version: 1.0
+  js:
+    js/gender_popup.js: {}
+  dependencies:
+    - core/drupal
+    - core/jquery
+    - core/drupal.dialog.ajax  # For the dialog support in AJAX.

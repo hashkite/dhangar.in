@@ -5,10 +5,10 @@
             padding: 2rem;
             position: relative;
             box-shadow: var(--bs-box-shadow) !important;
-            width: 1000px;
+            width: 106%;
             overflow: hidden;
             margin-top: 65px;
-           
+           max-width: 1000px;
             
             z-index: 1;
 
@@ -49,19 +49,53 @@
 
             img {
                    max-width: 100%;
-                     width: 10rem;
-                    height: 10rem;
+                     width: 12rem;
+                    height: 12rem;
                     border-radius: 100%;
-                    border: 4px solid var(--dark-blue);
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
                     margin-top: 3rem;
+                    object-fit: cover;
+                    background-color: #fff;
+
             }
         }
+        &-occupation{
+            a{
+                pointer-events: none;
+                cursor: default;
+                text-decoration: none;
+                color: black;
+    
+            }
+    
+        }
+        &-name{
+
+             margin-top: 20px;
+        }
+        &-education{
+            a{
+                pointer-events: none;
+                cursor: default;
+                text-decoration: none;
+                color: black;
+    
+            }
+    
+        }
+        &-About{
+            font-size: 17px;
+            font-weight: 400;
+            margin-top: 20px;
+        }
+        &-maritalStatus{
+            a{
+                pointer-events: none;
+                cursor: default;
+                text-decoration: none;
+                color: black;
+    
+            }
+        }
+
     }
 }
-
-
-
-
