@@ -1,0 +1,20 @@
+gender_popup.gender_selection_form:
+  path: '/gender-selection-form'
+  defaults:
+    _form: '\Drupal\gender_popup\Form\GenderSelectionForm'
+    _title: 'Select Your Gender'
+  requirements:
+    _permission: 'access content'
+
+gender_popup.user_edit_profile:
+  path: '/user/{user}/edit-profile'
+  defaults:
+    _form: '\Drupal\gender_popup\Form\UserProfileEditForm'
+    _title: 'Edit Profile'
+  requirements:
+    _user_is_logged_in: 'TRUE'
+    _entity_access: 'user.update'
+  options:
+    parameters:
+      user:
+        type: entity:user

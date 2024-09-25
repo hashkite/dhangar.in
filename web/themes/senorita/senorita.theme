@@ -1,5 +1,7 @@
 <?php
 
+use Drupal\user\Entity\User;
+
 function senorita_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $form_state, $form_id) {
     // Check if the current form is the user login form.
     if ($form_id == 'user_login_form') {

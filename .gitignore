@@ -3,3 +3,4 @@ web/modules/contrib
 vendor
 web/sites/default/files
 web/themes/senorita/node_modules
+web/themes/contrib/

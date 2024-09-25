@@ -1,0 +1,8 @@
+name: 'Gender Popup'
+type: module
+description: 'Prompts users to select their gender if not already selected.'
+package: Custom
+core_version_requirement: ^10
+dependencies:
+  - drupal:user
+version: 1.0

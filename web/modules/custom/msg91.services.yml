@@ -1,4 +1,0 @@
-services:
-  msg91.default:
-    class: Drupal\msg91\MSG91SMSService
-    arguments: ['@config.factory', '@http_client', '@logger.factory']

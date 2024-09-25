@@ -21,10 +21,17 @@
         "drupal/core-composer-scaffold": "^10.3",
         "drupal/core-project-message": "^10.3",
         "drupal/core-recommended": "^10.3",
+        "drupal/gin": "^3.0@rc",
+        "drupal/gin_toolbar": "^1.0@rc",
+        "drupal/googlelogin-googlelogin": "^9.2",
         "drupal/otp_verification": "^2.1",
         "drupal/paragraphs": "^1.17",
+        "drupal/redirect_after_login": "^3.0",
+        "drupal/social_auth_google": "^4.0",
         "drupal/viewfield": "^3.0@beta",
-        "drush/drush": "^12.5"
+        "drupal/webform": "^6.2",
+        "drush/drush": "^12.5",
+        "google/apiclient": "^2.17"
     },
     "conflict": {
         "drupal/drupal": "*"
