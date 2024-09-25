@@ -1,0 +1,13 @@
+<?php
+/**
+ * Implements hook_user_insert().
+ */
+function gender_role_assignment_user_insert($account) {
+    if ($account->get('field_gender')->value == 'male') {
+        $account->addRole('groom');
+    }
+    elseif ($account->get('field_gender')->value == 'female') {
+        $account->addRole('bride');
+    }
+    $account->save();
+  }
